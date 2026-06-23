@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TimeTravel Agency — Explorez l'Histoire, Réinventée</title>
+  <meta name="description" content="Agence de voyage temporel de luxe. Trois époques, trois capsules : Paris 1889, le Crétacé, Florence 1504.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ───────── HEADER ───────── -->
+  <header id="site-header">
+    <button class="brand" data-scroll="home">
+      <span class="brand-glyph">⏳</span>
+      <span>TimeTravel <span class="gold">Agency</span></span>
+    </button>
+    <nav>
+      <button class="nav-link" data-scroll="home">Accueil</button>
+      <button class="nav-link" data-scroll="destinations">Destinations</button>
+      <button class="nav-link" data-scroll="quiz">Quiz</button>
+      <button class="nav-link nav-cta" data-scroll="contact">Contact</button>
+    </nav>
+  </header>
+
+  <!-- ───────── HERO ───────── -->
+  <section id="home" class="hero">
+    <div class="hero-ring drift" aria-hidden="true"></div>
+    <div class="tunnel-ring" aria-hidden="true"></div>
+    <div class="tunnel-ring" style="animation-delay:2.3s" aria-hidden="true"></div>
+    <div class="tunnel-ring" style="animation-delay:4.6s" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="eyebrow hero-anim" style="animation-delay:.1s">
+        <span class="rule"></span>Agence de voyage temporel · Accès privé
+      </div>
+      <h1 class="hero-anim" style="animation-delay:.25s">Explorez l'Histoire,<br><em>Réinventée</em></h1>
+      <p class="hero-anim" style="animation-delay:.42s">Une maison de voyage temporel pour quelques privilégiés. Trois époques, trois capsules, un protocole d'immersion sans empreinte. Vous observez l'Histoire de près, sans jamais la déranger.</p>
+      <div class="hero-actions hero-anim" style="animation-delay:.58s">
+        <button class="btn btn-gold" data-scroll="destinations">Découvrir les destinations</button>
+        <button class="btn btn-ghost" data-scroll="quiz">Trouver mon époque</button>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">Faites défiler</div>
+  </section>
+
+  <!-- ───────── DESTINATIONS ───────── -->
+  <section id="destinations" class="destinations">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="rule"></span>Trois départs</div>
+      <h2>Choisissez votre siècle</h2>
+      <p>Chaque expédition est calibrée pour une poignée de voyageurs. Le calendrier est étroit : on n'accoste l'Histoire qu'à l'instant précis qui mérite le déplacement.</p>
+    </div>
+    <div id="dest-list" class="dest-list"><!-- injecté par app.js --></div>
+  </section>
+
+  <!-- ───────── QUIZ ───────── -->
+  <section id="quiz" class="quiz">
+    <div class="reveal quiz-wrap">
+      <div class="quiz-head">
+        <div class="eyebrow center"><span class="rule"></span>Sur mesure<span class="rule"></span></div>
+        <h2>Trouvez votre époque idéale</h2>
+        <p>Quatre questions, une recommandation rédigée pour vous par notre conseiller. Répondez d'instinct.</p>
+      </div>
+      <div id="quiz-card" class="quiz-card"><!-- injecté par app.js --></div>
+    </div>
+  </section>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer id="contact" class="reveal">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-brand"><span class="brand-glyph">⏳</span>TimeTravel <span class="gold">Agency</span></div>
+        <p>Bureau d'expédition temporelle, quai de l'Horloge. Capsules calibrées à la décennie près, conseillers historiens et assurance paradoxe incluse à chaque départ.</p>
+      </div>
+      <div>
+        <div class="foot-title">Destinations</div>
+        <div class="foot-links"><span>Paris 1889</span><span>Crétacé −65 M</span><span>Florence 1504</span></div>
+      </div>
+      <div>
+        <div class="foot-title">La maison</div>
+        <div class="foot-links"><span>Le protocole d'immersion</span><span>Nos historiens-escortes</span><span>Sécurité temporelle</span></div>
+      </div>
+      <div>
+        <div class="foot-title">Contact</div>
+        <div class="foot-links"><span>13 quai de l'Horloge, Paris</span><span>contact@timetravel-agency.fr</span><span>Sur rendez-vous uniquement</span></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 TimeTravel Agency — bureau d'expédition temporelle.</span>
+      <span>Projet pédagogique. Destinations, capsules et tarifs entièrement fictifs.</span>
+    </div>
+  </footer>
+
+  <!-- ───────── CHATBOT ───────── -->
+  <div class="chat-dock">
+    <div id="chat-panel" class="chat-panel" hidden>
+      <div class="chat-header">
+        <span class="chat-avatar">⏳</span>
+        <div class="chat-id">
+          <div class="chat-name">Assistant TimeTravel</div>
+          <div class="chat-status"><span class="dot"></span>Conseiller-historien · en ligne</div>
+        </div>
+        <button id="chat-min" class="chat-min" aria-label="Réduire">−</button>
+      </div>
+      <div id="chat-scroll" class="chat-scroll">
+        <div class="msg bot">
+          <span class="msg-avatar">⏳</span>
+          <div class="bubble bot">Bienvenue chez TimeTravel Agency. Je connais nos trois époques sur le bout des doigts — Paris 1889, le Crétacé, Florence 1504. Que puis-je vous faire découvrir ?</div>
+        </div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" autocomplete="off" placeholder="Posez-moi vos questions sur les voyages temporels...">
+        <button type="submit" class="chat-send" aria-label="Envoyer">↑</button>
+      </form>
+    </div>
+    <button id="chat-toggle" class="chat-toggle float" aria-label="Ouvrir l'assistant"><span>⏳</span></button>
+  </div>
+
+  <!-- ───────── MODALE DESTINATION ───────── -->
+  <div id="modal" class="modal-overlay" hidden>
+    <div id="modal-card" class="modal-card"><!-- injecté par app.js --></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
