@@ -2,9 +2,10 @@
 
 *Une agence de voyage temporel de luxe — explorez l'Histoire de près, sans jamais la déranger.*
 
-**L'application en ligne : [time-travel-agency-nu.vercel.app](https://time-travel-agency-nu.vercel.app/)**
+**Application en ligne : [time-travel-agency-nu.vercel.app](https://time-travel-agency-nu.vercel.app/)**
+**Code source : [github.com/RostomS/TimeTravelAgency](https://github.com/RostomS/TimeTravelAgency)**
 
-> Il n'y a rien à installer pour l'utiliser. Ouvrez le lien ci-dessus dans n'importe quel navigateur, sur ordinateur ou sur mobile, et tout fonctionne — y compris le chatbot.
+> Il n'y a rien à installer pour l'utiliser. Ouvrez le premier lien dans n'importe quel navigateur, sur ordinateur ou sur mobile, et tout fonctionne — y compris le chatbot.
 
 ---
 
